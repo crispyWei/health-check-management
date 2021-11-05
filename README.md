@@ -15,4 +15,4 @@
 ### 系統介面圖
 
 - 登入頁面
-<img src="/images/application-image-1.png" width="700"/>
+<img src="/images/application-image-1.png" width="300"/>

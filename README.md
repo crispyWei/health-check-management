@@ -16,3 +16,7 @@
 
 - 登入頁面
 <img src="/images/application-image-1.png" width="200"/>
+
+- 登入頁面
+分組設定、人員清單
+<img src="/images/application-image-2.png" width="350"/>

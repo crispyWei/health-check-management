@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="headerColor">#1D3557</color>
+    <color name="blockHeaderColor">#457B9D</color>
+    <color name="blockBackground">#D2D7DF</color>
+    <color name="df_red">#457B9D</color>
+    <color name="df_danger">#232731</color>
+    <color name="formBg">#f0f0f0</color>
+    <color name="black_alpha_75">#bf000000</color>
+    <color name="white">#ffffffff</color>
+</resources>

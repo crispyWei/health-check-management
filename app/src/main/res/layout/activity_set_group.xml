@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blockBackground"
+    tools:context=".activity.SetGroupActivity">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical"
+        android:id="@+id/set_group_button_container">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/background_with_shadow">
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="*"
+                android:shrinkColumns="*">
+                <TableRow
+                    android:background="@drawable/rounded_edge">
+                    <TextView
+                        android:text="基本資料"
+                        android:textColor="#ffffff"
+                        android:padding="8dp"
+                        android:textSize="18dp"
+                        android:layout_width="30dp"
+                        android:layout_column="0"
+                        android:layout_weight="1">
+                    </TextView>
+                </TableRow>
+                <TableRow
+                    android:layout_weight="1"
+                    >
+                    <FrameLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" >
+                        <EditText
+                            android:id="@+id/customer_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:paddingLeft="40dp" >
+                        </EditText>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="姓名" />
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_marginTop="6dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" >
+                        <Spinner
+                            style="@android:style/Widget.Material.Spinner.Underlined"
+                            android:id="@+id/gender_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="55dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="性別" />
+                    </FrameLayout>
+                </TableRow>
+                <TableRow
+                    android:layout_weight="1">
+                    <FrameLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                        <EditText
+                            android:id="@+id/customer_patid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:paddingLeft="55dp" >
+                        </EditText>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="病歷號" />
+                    </FrameLayout>
+                </TableRow>
+                <TableRow
+                    android:layout_weight="1">
+                    <FrameLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                        <EditText
+                            android:id="@+id/customer_remark"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:paddingLeft="40dp" >
+                        </EditText>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="備註" />
+                    </FrameLayout>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/background_with_shadow">
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="*"
+                android:weightSum="4">
+                <TableRow
+                    android:background="@drawable/rounded_edge">
+                    <TextView
+                        android:text="組別"
+                        android:textColor="#ffffff"
+                        android:padding="8dp"
+                        android:textSize="18dp"
+                        android:layout_width="30dp"
+                        android:layout_column="0"
+                        android:layout_weight="1">
+                    </TextView>
+                </TableRow>
+                <TableRow
+                    android:layout_weight="1"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="10dp"
+                    >
+                    <Button
+                        android:id="@+id/btn_number_A"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/button_group_select_state"
+                        android:textColor="@drawable/button_group_select_text_state"
+                        android:layout_marginRight="5dp"
+                        android:text="A" />
+                    <Button
+                        android:id="@+id/btn_number_B"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/button_group_select_state"
+                        android:textColor="@drawable/button_group_select_text_state"
+                        android:layout_marginRight="5dp"
+                        android:text="B" />
+
+                    <Button
+                        android:id="@+id/btn_number_C"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/button_group_select_state"
+                        android:textColor="@drawable/button_group_select_text_state"
+                        android:layout_marginRight="5dp"
+                        android:text="C" />
+
+                    <Button
+                        android:id="@+id/btn_number_D"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/button_group_select_state"
+                        android:textColor="@drawable/button_group_select_text_state"
+                        android:layout_marginRight="5dp"
+                        android:text="D" />
+                </TableRow>
+                <TableRow
+                    android:layout_weight="1"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:weightSum="4"
+                    >
+                    <Button
+                        android:id="@+id/btn_number_E"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/button_group_select_state"
+                        android:textColor="@drawable/button_group_select_text_state"
+                        android:layout_marginRight="5dp"
+                        android:text="E" />
+                    <Button
+                        android:id="@+id/btn_number_F"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/button_group_select_state"
+                        android:textColor="@drawable/button_group_select_text_state"
+                        android:layout_marginRight="5dp"
+                        android:text="F" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:background="@drawable/background_with_shadow">
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="*"
+                android:weightSum="4">
+                <TableRow
+                    android:background="@drawable/rounded_edge">
+                    <TextView
+                        android:text="編號"
+                        android:textColor="#ffffff"
+                        android:padding="8dp"
+                        android:textSize="18dp"
+                        android:layout_width="30dp"
+                        android:layout_column="0"
+                        android:layout_weight="1">
+                    </TextView>
+                </TableRow>
+                <TableRow
+                    android:layout_weight="1"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="10dp"
+                    >
+                    <Button
+                        android:id="@+id/btn_number_1"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/button_group_select_state"
+                        android:textColor="@drawable/button_group_select_text_state"
+                        android:text="1" />
+                    <Button
+                        android:id="@+id/btn_number_2"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/button_group_select_state"
+                        android:textColor="@drawable/button_group_select_text_state"
+                        android:text="2" />
+                    <Button
+                        android:id="@+id/btn_number_3"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/button_group_select_state"
+                        android:textColor="@drawable/button_group_select_text_state"
+                        android:text="3" />
+                    <Button
+                        android:id="@+id/btn_number_4"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/button_group_select_state"
+                        android:textColor="@drawable/button_group_select_text_state"
+                        android:text="4" />
+                </TableRow>
+                <TableRow
+                    android:layout_weight="1"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:weightSum="4"
+                    >
+                    <Button
+                        android:id="@+id/btn_number_5"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/button_group_select_state"
+                        android:textColor="@drawable/button_group_select_text_state"
+                        android:text="5" />
+                    <Button
+                        android:id="@+id/btn_number_6"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/button_group_select_state"
+                        android:textColor="@drawable/button_group_select_text_state"
+                        android:text="6" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+            <Button
+                android:id="@+id/clear_btn"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_weight=".5"
+                android:layout_width="0dip"
+                android:textColor="#FFFFFF"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/button_save_and_clear"
+                android:text="清除" />
+            <Button
+                android:id="@+id/save_btn"
+                android:layout_height="45dp"
+                android:layout_marginLeft="2dp"
+                android:layout_gravity="center"
+                android:layout_weight=".5"
+                android:layout_width="0dip"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/button_save_and_clear"
+                android:text="儲存" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

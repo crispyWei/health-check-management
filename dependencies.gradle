@@ -1,0 +1,9 @@
+ext{
+    supportVer = "1.0.0"
+    rxJavaVersion = "2.2.2"
+    rxJavaRetrofitAdapterVer = "2.3.0"
+    rxBindingVer = "2.2.0"
+    rxAdapterRetrofitVer = "2.3.0"
+    retrofitVersion = "2.3.0"
+    retrofitConverterGsonVer = "2.6.2"
+}

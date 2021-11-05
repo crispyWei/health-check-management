@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainLayout"
+    android:focusableInTouchMode="true">
+    <LinearLayout
+        style="@style/df_row_vertical"
+        android:layout_height="match_parent"
+        android:weightSum="12">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#1D3557"
+            android:layout_weight="6"
+            android:orientation="vertical"
+            android:gravity="center"
+            tools:ignore="Suspicious0dp">
+            <ImageView
+                android:id="@+id/imageViewLogo"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:contentDescription="應用程式圖示"
+                app:srcCompat="@drawable/logo"/>
+            <TextView
+                style="@style/df_h3"
+                android:layout_width="wrap_content"
+                android:text="健檢帶位系統"
+                android:textColor="@color/white" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="6"
+            android:gravity="center"
+            android:background="@color/formBg"
+            android:padding="20dp"
+            tools:ignore="Suspicious0dp">
+            <LinearLayout
+                android:id="@+id/sendOtpLayout"
+                style="@style/df_row_vertical"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="visible">
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                        <EditText
+                            android:id="@+id/customer_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:focusable="false"
+                            android:paddingLeft="80dp" >
+                        </EditText>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="登入代碼:" />
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                        <Spinner
+                            style="@android:style/Widget.Material.Spinner.Underlined"
+                            android:id="@+id/role_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="80dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="選擇角色:" />
+                    </FrameLayout>
+                <Button
+                    android:id="@+id/btn_customer_login"
+                    android:layout_marginTop="40dp"
+                    android:layout_width="match_parent"
+                    style="@style/df4_btn_danger"
+                    android:layout_gravity="center_vertical"
+                    android:text="登入系統"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

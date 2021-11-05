@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">健檢帶位</string>
+    <string-array name="gender_array">
+        <item>男性</item>
+        <item>女性</item>
+    </string-array>
+    <string-array name="role_array">
+        <item>控台</item>
+        <item>帶位</item>
+        <item>檢查室</item>
+    </string-array>
+</resources>

@@ -19,4 +19,4 @@
 
 - 登入頁面
 分組設定、人員清單
-<img src="/images/application-image-2.png" width="350"/>
+<img src="/images/application-image-2.png" width="500"/>
